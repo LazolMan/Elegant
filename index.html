@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant</title>
+
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <link rel="icon" href="images/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/dist/all.min.css" />
+    <link rel="stylesheet" href="styles/dist/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <h1 class="header__slogan header__slogan_position">
+          Say <b>Haloa</b> to your Portfolio
+        </h1>
+      </div>
+    </header>
+
+    <section class="top-line">
+      <a class="top-line__link" href="index.html">
+        <img class="top-line__logo" src="images/logo.png" alt="logo" />
+      </a>
+
+      <nav class="menu">
+        <input id="menu__toggle" type="checkbox" class="menu__toggle" />
+        <label for="menu__toggle" class="menu__toggle-label">
+          <svg preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+          <svg preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
+            <path
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+            />
+          </svg>
+        </label>
+
+        <ol class="menu__content">
+          <li class="menu-item">
+            <a class="menu-item_link active" href="#0">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="about.html">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="work.html">Work</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="contact.html">Contact</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="blog.html">Blog</a>
+          </li>
+
+          <!-- <li class="menu-item">
+            <a class="menu-item_link" href="#">Widgets</a>
+            <ol class="sub-menu">
+              <li class="menu-item">
+                <a class="menu-item_link" href="#0">Big Widgets</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item_link" href="#0">Bigger Widgets</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item_link" href="#0">Huge Widgets</a>
+              </li>
+            </ol>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="#0">Kabobs</a>
+            <ol class="sub-menu">
+              <li class="menu-item">
+                <a class="menu-item_link" href="#0">Shishkabobs</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item_link" href="#0">BBQ kabobs</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item_link" href="#0">Summer kabobs</a>
+              </li>
+            </ol>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="#0">Contact</a>
+          </li> -->
+        </ol>
+      </nav>
+    </section>
+
+    <section class="about">
+      <div class="inner">
+        <h4 class="about__top-text top-text">who we are</h4>
+        <h2 class="about__title title">Tell The World About Yourself</h2>
+        <p class="about__description description">
+          Typi non habent claritatem insitam; est usus legentis in iis qui facit
+          eorum claritatem. Investigationes demonstraverunt lectores legere me
+          lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+          qui sequitur mutationem consuetudium lectorum. Mirum est notare quam
+          littera gothica, quam nunc putamus parum claram, anteposuerit
+          litterarum formas humanitatis per seacula quarta decima et quinta
+          decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.
+        </p>
+        <a href="about.html" class="button">Read More About Us</a>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="inner">
+        <h4 class="work__top-text top-text">what we do</h4>
+        <h2 class="work__title title">Show Your Amazing Work</h2>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__row">
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_1.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_2.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_3.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_4.jpg" alt="gallery_item" />
+          </a>
+        </div>
+
+        <div class="gallery__row">
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_5.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_6.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_7.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="project.html">
+            <img class="gallery__img" src="images/work/gallery_8.jpg" alt="gallery_item" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="inner">
+        <h4 class="top-text team__top-text">who we are</h4>
+        <h2 class="title team__title">The Amazing People Behind This</h2>
+        <p class="description team__description">
+          Typi non habent claritatem insitam; est usus legentis in iis qui facit
+          eorum claritatem. Investigationes demonstraverunt lectores legere me
+          lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+          qui sequitur mutationem consuetudium lectorum.
+        </p>
+      </div>
+
+      <div class="team-list inner">
+        <div class="team-list__item">
+          <img class="team-list__img" src="images/team/team_1.jpg" alt="team" />
+
+          <div class="team-list__box">
+            <h4 class="team-list__top-text top-text">ceo</h4>
+            <h2 class="team-list__title title">Tobias Schneider</h2>
+            <p class="team-list__description description">
+              Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-list__item">
+          <img class="team-list__img" src="images/team/team_2.jpg" alt="team" />
+
+          <div class="team-list__box">
+            <h4 class="team-list__top-text top-text">designer</h4>
+            <h2 class="team-list__title title">Jack Knife</h2>
+            <p class="team-list__description description">
+              Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-list__item">
+          <img class="team-list__img" src="images/team/team_3.jpg" alt="team" />
+
+          <div class="team-list__box">
+            <h4 class="team-list__top-text top-text">developer</h4>
+            <h2 class="team-list__title title">Ricki Hall</h2>
+            <p class="team-list__description description">
+              Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="inner">
+        <h4 class="blog__top-text top-text">last post</h4>
+        <h2 class="blog__title title">We Like to Write</h2>
+
+        <div class="last-post">
+          <img
+            class="last-post__img"
+            src="images/content/index_1.jpg"
+            alt="post"
+          />
+
+          <div class="last-post__content">
+            <h4 class="last-post__date">14 September 2014</h4>
+            <h2 class="last-post__title title">Change Your Space</h2>
+            <p class="last-post__description description">
+              Typi non habent claritatem insitam; est usus legentis in iis qui
+              facit eorum claritatem. Investigationes demonstraverunt lectores.
+            </p>
+            <a href="project.html" class="last-post__button button">Read</a>
+          </div>
+        </div>
+
+        <a href="blog.html" class="button">More From Our Blog</a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="inner">
+        <h4 class="contact__top-text top-text">contact us</h4>
+        <h2 class="contact__title title">Work With Us</h2>
+      </div>
+
+      <div class="contact__map inner" id="map"></div>
+
+      <div class="contact-list inner">
+        <div class="item-contact">
+          <h4 class="item-contact__top-text top-text">Location</h4>
+          <p class="item-contact__description description">
+            198 West 21th Street, New York, NY 10010
+          </p>
+        </div>
+
+        <div class="item-contact">
+          <h4 class="item-contact__top-text top-text">Phone</h4>
+          <p class="item-contact__description description">
+            +88 (0) 101 0000000
+          </p>
+          <p class="item-contact__description description">
+            +88 (0) 101 0000000
+          </p>
+        </div>
+
+        <div class="item-contact">
+          <h4 class="item-contact__top-text top-text">Fax</h4>
+          <p class="item-contact__description description">
+            +88 (0) 202 0000 000
+          </p>
+          <p class="item-contact__description description">
+            +88 (0) 202 0000 000
+          </p>
+        </div>
+
+        <div class="item-contact">
+          <h4 class="item-contact__top-text top-text">Email</h4>
+          <p class="item-contact__description description">e@elegant.com</p>
+          <p class="item-contact__description description">c@elegant.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content inner">
+        <p class="footer-content__item description">
+          © 2014 Designed and Developed by Diogo Dantas
+        </p>
+
+        <p class="footer-content__item description">
+          Email: imdiogodantas@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script>
+      function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 10,
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+    </script> -->
+
+    <script src="js/script.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8P72HMX3zllKeeZt8X89dJWMEu0LSX8&callback=myMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

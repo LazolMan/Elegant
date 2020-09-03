@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant - Work</title>
+
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <link rel="icon" href="images/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/dist/all.min.css" />
+    <link rel="stylesheet" href="styles/dist/work.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+    </header>
+
+    <section class="top-line">
+      <a class="top-line__link" href="index.html">
+        <img class="top-line__logo" src="images/logo.png" alt="logo" />
+      </a>
+
+      <nav class="menu">
+        <input id="menu__toggle" type="checkbox" class="menu__toggle" />
+        <label for="menu__toggle" class="menu__toggle-label">
+          <svg preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+          <svg preserveAspectRatio="xMinYMin" viewBox="0 0 24 24">
+            <path
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+            />
+          </svg>
+        </label>
+
+        <ol class="menu__content">
+          <li class="menu-item">
+            <a class="menu-item_link" href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="about.html">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link active" href="work.html">Work</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="contact.html">Contact</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item_link" href="blog.html">Blog</a>
+            <ol class="sub-menu">
+              <li class="menu-item">
+                <a class="menu-item_link" href="project.html">Post</a>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </nav>
+    </section>
+
+    <section class="work">
+      <div class="inner flexbox">
+        <h4 class="work__top-text top-text">our amazing work</h4>
+        <h2 class="work__title title">What We Do</h2>
+        <p class="work__description description">
+          Typi non habent claritatem insitam; est usus legentis in iis qui facit
+          eorum claritatem. Investigationes demonstraverunt lectores legere me
+          lius quod ii legunt saepius.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__row">
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_1.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_2.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_3.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_4.jpg" alt="gallery_item" />
+          </a>
+        </div>
+
+        <div class="gallery__row">
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_5.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_6.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_7.jpg" alt="gallery_item" />
+          </a>
+          <a class="gallery__item" href="#">
+            <img src="images/work/gallery_8.jpg" alt="gallery_item" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content inner">
+        <p class="footer-content__item description">
+          © 2014 Designed and Developed by Diogo Dantas
+        </p>
+
+        <p class="footer-content__item description">
+          Email: imdiogodantas@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

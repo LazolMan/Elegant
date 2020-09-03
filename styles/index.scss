@@ -1,0 +1,404 @@
+@import "reset.css";
+@import "menu.css";
+@import "style.css";
+
+//
+// ********** HEADER **********
+//
+
+.header {
+  background-image: url(../../images/header/index_1.jpg);
+  min-height: 700px;
+
+  @media (max-width: 750px) {
+    background-image: url(../../images/header/index_2.jpg);
+    min-height: 1320px;
+    background-size: auto;
+    background-position: center;
+  }
+
+  @media (max-width: 480px) {
+    min-height: 600px;
+  }
+}
+
+//
+// ********** ABOUT US **********
+//
+
+.about {
+  padding-top: 80px;
+  margin-bottom: 163px;
+
+  @media (max-width: 750px) {
+    padding-top: 150px;
+    margin-bottom: 300px;
+  }
+
+  &__top-text {
+    margin-bottom: 23px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 55px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 55px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 75px;
+    }
+  }
+}
+
+//
+// ********** WORK **********
+//
+
+.work {
+  margin-bottom: 160px;
+
+  @media (max-width: 750px) {
+    margin-bottom: 300px;
+  }
+
+  &__top-text {
+    margin-bottom: 23px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 160px;
+    }
+  }
+}
+
+.gallery {
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4px;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: calc(25% - 4px);
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+
+    &:hover {
+      filter: brightness(50%);
+    }
+
+    @media (max-width: 750px) {
+      max-height: 565px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+//
+// ********** TEAM **********
+//
+
+.team {
+  &__top-text {
+    margin-bottom: 50px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 130px;
+    }
+  }
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 165px;
+  width: 100%;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    margin-bottom: 300px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 165px;
+  }
+
+  &__item {
+    width: calc(33.3333% - 10px);
+    background-color: #f9f9f9;
+
+    @media (max-width: 750px) {
+      width: 100%;
+      padding-bottom: 100px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    padding: 0 20px;
+    text-align: start;
+  }
+
+  &__top-text {
+    font-size: 13px;
+    margin-bottom: 20px;
+
+    @media (max-width: 750px) {
+      font-size: 29px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 21px;
+    margin-bottom: 40px;
+
+    @media (max-width: 750px) {
+      font-size: 40px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__description {
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 50px;
+
+    @media (max-width: 750px) {
+      font-size: 29px;
+      line-height: 40px;
+    }
+  }
+}
+
+//
+// ********** BLOG **********
+//
+
+.blog {
+  margin-bottom: 160px;
+
+  &__top-text {
+    margin-bottom: 20px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.last-post {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 80px;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    margin-bottom: 300px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 80px;
+  }
+
+  &__img {
+    width: 50%;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    background-color: #f9f9f9;
+    text-align: start;
+    padding: 0 40px;
+
+    @media (max-width: 750px) {
+      width: calc(100% - 40px);
+      padding: 0 20px;
+    }
+  }
+
+  &__date {
+    color: rgba($color: #021725, $alpha: 0.7);
+    font-size: 13px;
+    letter-spacing: 0.005em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    @media (max-width: 750px) {
+      color: #021725;
+      font-size: 28px;
+      letter-spacing: 0;
+      padding-top: 80px;
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    color: rgba($color: #021725, $alpha: 0.7);
+    font-size: 30px;
+    margin-bottom: 40px;
+
+    @media (max-width: 750px) {
+      color: #021725;
+      font-size: 60px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 60px;
+
+    @media (max-width: 750px) {
+      font-size: 29px;
+      line-height: 47px;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__button {
+    padding: 15px 45px;
+
+    @media (max-width: 750px) {
+      padding: 35px 90px;
+      margin: 75px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 15px 45px;
+    }
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+  }
+}
+
+//
+// ********** CONTACT **********
+//
+
+.contact {
+  margin-bottom: 80px;
+
+  @media (max-width: 750px) {
+  }
+
+  &__top-text {
+    margin-bottom: 24px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 55px;
+
+    @media (max-width: 750px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.item-contact {
+  background-color: #f9f9f9;
+  width: calc(50% - 100px);
+  text-align: center;
+  padding: 70px 50px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 30px;
+  }
+
+  &__top-text {
+    margin-bottom: 50px;
+
+    @media (max-width: 480px) {
+      margin-bottom: 15px;
+    }
+  }
+}

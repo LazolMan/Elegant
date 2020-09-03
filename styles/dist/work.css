@@ -1,0 +1,74 @@
+@import "reset.css";
+@import "menu.css";
+@import "style.css";
+.header {
+  background-image: url(../../images/header/work.jpg);
+  min-height: 400px;
+}
+@media (max-width: 750px) {
+  .header {
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.work {
+  padding-top: 130px;
+  margin-bottom: 5px;
+}
+@media (max-width: 750px) {
+  .work {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+}
+.work__top-text {
+  margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .work__top-text {
+    margin-bottom: 15px;
+  }
+}
+.work__title {
+  margin-bottom: 60px;
+}
+@media (max-width: 480px) {
+  .work__title {
+    margin-bottom: 30px;
+  }
+}
+.work__description {
+  margin-bottom: 135px;
+}
+@media (max-width: 750px) {
+  .work__description {
+    margin-bottom: 60px;
+  }
+}
+.work .gallery__row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+}
+@media (max-width: 750px) {
+  .work .gallery__row {
+    flex-direction: column;
+  }
+}
+.work .gallery__row .gallery__item {
+  width: calc(25% - 4px);
+}
+@media (max-width: 750px) {
+  .work .gallery__row .gallery__item {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+.work .gallery__row .gallery__item img {
+  width: 100%;
+  height: auto;
+}
+.work .gallery__row .gallery__item img:hover {
+  filter: brightness(75%);
+}

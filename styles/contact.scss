@@ -1,0 +1,138 @@
+@import "reset.css";
+@import "menu.css";
+@import "style.css";
+
+.header {
+  background-image: url(../../images/header/contact.jpg);
+  min-height: 400px;
+
+  @media (max-width: 750px) {
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.contact {
+  padding-top: 125px;
+
+  &__top-text {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-bottom: 85px;
+  }
+}
+
+.content {
+  margin-top: 90px;
+  margin-bottom: 80px;
+  text-align: left;
+
+  &__row {
+    display: flex;
+    align-items: stretch;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item-small {
+    width: 40%;
+    height: 300px;
+
+    font-size: 25px;
+    line-height: 32px;
+    color: #ffffff;
+
+    @media (max-width: 750px) {
+      width: 100%;
+      height: 375px;
+
+      font-size: 45px;
+      line-height: 60px;
+    }
+
+    @media (max-width: 480px) {
+
+      font-size: 25px;
+      line-height: 32px;
+    }
+  }
+
+  &__item-small_yellow {
+    background-color: #d3b000;
+    margin-right: 5px;
+
+    @media (max-width: 750px) {
+      margin-right: 0;
+    }
+  }
+
+  &__item-small_black {
+    background-color: #212121;
+    margin-left: 5px;
+
+    @media (max-width: 750px) {
+      margin-left: 0;
+    }
+  }
+
+  &__text-small {
+    padding: 80px 30px;
+
+    &:before {
+      border-top: 3px solid #ffffff;
+      display: block;
+      position: relative;
+      top: -45px;
+      left: -45%;
+      margin: 0 auto;
+      width: 10%;
+      content: "";
+    }
+  }
+
+  &__item-large {
+    width: 60%;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  &__item-large_text {
+    background: #f9f9f9;
+  }
+
+  &__img-large {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__description {
+    padding: 45px;
+    font-size: 17px;
+
+    @media (max-width: 750px) {
+      padding: 10% 8%;
+
+      color: #323d43;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 45px;
+
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+}

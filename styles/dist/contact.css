@@ -1,0 +1,130 @@
+@import "reset.css";
+@import "menu.css";
+@import "style.css";
+.header {
+  background-image: url(../../images/header/contact.jpg);
+  min-height: 400px;
+}
+@media (max-width: 750px) {
+  .header {
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.contact {
+  padding-top: 125px;
+}
+.contact__top-text {
+  margin-bottom: 30px;
+}
+.contact__button {
+  margin-bottom: 85px;
+}
+
+.content {
+  margin-top: 90px;
+  margin-bottom: 80px;
+  text-align: left;
+}
+.content__row {
+  display: flex;
+  align-items: stretch;
+}
+@media (max-width: 750px) {
+  .content__row {
+    flex-direction: column;
+  }
+}
+.content__item-small {
+  width: 40%;
+  height: 300px;
+  font-size: 25px;
+  line-height: 32px;
+  color: #ffffff;
+}
+@media (max-width: 750px) {
+  .content__item-small {
+    width: 100%;
+    height: 375px;
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .content__item-small {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+.content__item-small_yellow {
+  background-color: #d3b000;
+  margin-right: 5px;
+}
+@media (max-width: 750px) {
+  .content__item-small_yellow {
+    margin-right: 0;
+  }
+}
+.content__item-small_black {
+  background-color: #212121;
+  margin-left: 5px;
+}
+@media (max-width: 750px) {
+  .content__item-small_black {
+    margin-left: 0;
+  }
+}
+.content__text-small {
+  padding: 80px 30px;
+}
+.content__text-small:before {
+  border-top: 3px solid #ffffff;
+  display: block;
+  position: relative;
+  top: -45px;
+  left: -45%;
+  margin: 0 auto;
+  width: 10%;
+  content: "";
+}
+.content__item-large {
+  width: 60%;
+}
+@media (max-width: 750px) {
+  .content__item-large {
+    width: 100%;
+  }
+}
+.content__item-large_text {
+  background: #f9f9f9;
+}
+.content__img-large {
+  width: 100%;
+  height: 100%;
+}
+.content__description {
+  padding: 45px;
+  font-size: 17px;
+}
+@media (max-width: 750px) {
+  .content__description {
+    padding: 10% 8%;
+    color: #323d43;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 480px) {
+  .content__description {
+    padding: 45px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .content__description {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}

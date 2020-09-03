@@ -1,0 +1,66 @@
+@import "reset.css";
+@import "menu.css";
+@import "style.css";
+.header {
+  background-image: url(../../images/header/project.jpg);
+  min-height: 700px;
+}
+@media (max-width: 750px) {
+  .header {
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.left-block {
+  width: 57%;
+  text-align: left;
+}
+@media (max-width: 750px) {
+  .left-block {
+    padding: 30px;
+    width: calc(100% - 60px);
+  }
+}
+.left-block__title {
+  color: #000;
+  margin-bottom: 120px;
+  font-weight: 600;
+}
+.left-block__description {
+  font-family: "Cardo", serif;
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.left-block__description strong {
+  font-weight: 600;
+}
+.left-block__img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.left-block__img_large {
+  max-height: 830px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 75px;
+}
+@media (max-width: 750px) {
+  .contact {
+    display: none;
+  }
+}
+.contact__button {
+  color: #c0c0c0;
+  font-size: 15px;
+  padding: 20px 80px;
+  border: 1px solid #a1a1a1;
+  text-transform: uppercase;
+}

@@ -1,0 +1,258 @@
+.wrapper {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.inner {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 750px) {
+  .inner {
+    max-width: calc(100% - 60px);
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-text {
+  color: #d4af37;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+}
+@media (max-width: 750px) {
+  .top-text {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 480px) {
+  .top-text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .top-text {
+    font-size: 13px;
+  }
+}
+
+.title {
+  color: rgba(2, 23, 37, 0.7);
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+@media (max-width: 750px) {
+  .title {
+    font-size: 75px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .title {
+    font-size: 44px;
+  }
+}
+
+.description {
+  color: rgba(2, 23, 37, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 32px;
+}
+@media (max-width: 750px) {
+  .description {
+    color: #021725;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 52px;
+  }
+}
+@media (max-width: 480px) {
+  .description {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
+.button {
+  color: rgba(2, 23, 37, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  padding: 22px 48px;
+  border: 1px solid #000000;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+.button:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.5s ease;
+}
+@media (max-width: 750px) {
+  .button {
+    color: #021725;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 40px 90px;
+  }
+}
+@media (max-width: 480px) {
+  .button {
+    font-size: 16px;
+    padding: 22px 48px;
+  }
+}
+@media (max-width: 375px) {
+  .button {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.scroll-bttn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+.scroll-bttn:hover {
+  cursor: pointer;
+  color: #fff;
+  font-size: 33px;
+  transition: all 0.5s ease;
+}
+
+.content-box {
+  background-color: #f9f9f9;
+  padding: 60px 0px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 750px) {
+  .content-box {
+    flex-direction: column;
+  }
+}
+.content-box__left-block {
+  width: 60%;
+  text-align: left;
+}
+@media (max-width: 750px) {
+  .content-box__left-block {
+    width: 100%;
+  }
+}
+.content-box__sidebar {
+  width: 25%;
+}
+@media (max-width: 750px) {
+  .content-box__sidebar {
+    width: calc(100% - 100px);
+    padding: 0 50px;
+  }
+}
+.content-box__sidebar img {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  object-position: 0 0;
+  margin-bottom: 2px;
+}
+@media (max-width: 750px) {
+  .content-box__sidebar img {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .content-box__sidebar img {
+    height: 200px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header__slogan {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 300;
+  letter-spacing: 0.005em;
+  text-align: center;
+}
+.header__slogan_position {
+  padding-top: 25%;
+}
+
+.top-line {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  z-index: 9;
+  background-color: rgba(36, 47, 53, 0.7);
+}
+.top-line__link {
+  margin-left: 15px;
+}
+
+.footer {
+  background-color: #eeeeee;
+  min-height: 90px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 75px 15px;
+  }
+}
+.footer-content__item {
+  display: inline-block;
+  padding: 40px 10px;
+  font-size: 16px;
+}
+@media (max-width: 750px) {
+  .footer-content__item {
+    color: rgba(50, 61, 67, 0.7);
+    display: block;
+    padding: 0;
+    font-size: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .footer-content__item {
+    font-size: 18px;
+  }
+}
